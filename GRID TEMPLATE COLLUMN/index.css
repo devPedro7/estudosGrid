@@ -1,0 +1,20 @@
+/*GRID TEMPLATE COLLUMNS*/
+/*ELE TRANSFORMA AS LINHAS EM COLUNAS E SEPARA ELAS POR FRAÇÕES 
+O f DEIXA ALGO MAS RESPONSIVO, DIVIDINDO POR IGUAL.
+
+QUANDO DEFINIMOS A QUANTIDADE DE COLUNAS COM O TEMPLATE-COLUMNS, ELE FIXA QUE O LAYOUT VAI TER SOMENTE AQUELA QUANTIDADE DE COLUNAS, E O QUE SOBRAR VAI PARA BAIXO.
+
+*/
+
+#app{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#app > div{
+    border: 1px solid red;
+}
+
+#app > span{
+    border: 1px solid blue;
+}
