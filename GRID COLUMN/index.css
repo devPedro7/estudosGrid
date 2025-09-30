@@ -1,0 +1,49 @@
+/*GRID COLLUMN*/
+/*
+  O GRID COLUMN É UM SHORTHAND ATALHO PARA OUTRAS PROPIEDADES
+  GRID-COLUMN START E GRID-COLUMN-END
+
+  SERVE PARA COMO EU QUERO MOVER OS ELEMENTOS
+  GRID-COLUMN START: ONDE EU QUERO QUE ELE COMECE
+  GRID-COLUMN-END: ONDE EU QUERO QUE ELE TERMINE
+
+
+  PODEMOS UTILIZAR: GRID-COLUMN START E GRID-COLUMN-END
+  OU: GRID-COLUMN: 1/3 começa no 1 e termina no 3
+  
+  */
+
+#app{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 100vh;
+    border: 2px solid green;
+}
+
+#app > div{
+    border: 1px solid red;
+    
+}
+
+#app > div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: orange;
+}
+
+#app > div:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: pink;
+}
+
+#app > div:nth-child(3){
+    background-color: blue;
+}
+
+#app > div:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: green;
+}
