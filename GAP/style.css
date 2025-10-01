@@ -1,0 +1,45 @@
+/*GAP */
+/*
+
+  É O ESPAÇAMENTO ENTRE OS ELEMENTOS
+
+  ELE É UM SHORTHAND PARA COLUMN GAP E ROW-GAP
+
+  */
+
+#app {
+  display: grid;
+
+  grid-template-areas:
+    "A B B"
+    "A B B"
+    "A C D";
+
+  height: 100vh;
+  gap: 20px;
+  border: 2px solid green;
+}
+
+#app * {
+  border: 1px solid red;
+}
+
+#app header {
+  grid-area: A;
+  background-color: orange;
+}
+
+#app main {
+  grid-area: B;
+  background-color: pink;
+}
+
+#app aside {
+    grid-area: C;
+  background-color: blue;
+}
+
+#app footer {
+  grid-area: D;
+  background-color: green;
+}
