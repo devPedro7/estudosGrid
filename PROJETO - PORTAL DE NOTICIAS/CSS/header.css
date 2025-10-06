@@ -1,0 +1,25 @@
+#primary{
+    padding-block: 20px; /*pegando o eixo vertical: em cima e embaixo*/
+}
+
+#primary div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#primary div:nth-child(2){
+    margin-inline: auto;
+    font: var(--h1);
+    color: var(--brand-color-light);
+}
+
+#primary div:nth-child(3){
+    justify-self: end;
+}
+
+#secondary{
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none; /*retira as bordas das laterais e deixa em cima e embaixo*/
+}
