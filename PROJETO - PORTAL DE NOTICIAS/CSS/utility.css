@@ -1,0 +1,17 @@
+/*classe utilitaria: utility-first classe que faz apenas uma coisa*/
+/*os frameworks de front utilizam classes utilitarias*/
+.grid{
+    display: grid;
+}
+
+.grid-flow-col{ /*fazendo com o grid saia de linha e vire coluna*/
+    grid-auto-flow: column;
+}
+
+.grid-cols-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-16{
+    gap: 12px;
+}
